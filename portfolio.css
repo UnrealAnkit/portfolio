@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: url("photo-1654156203488-9114f2545e1f.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  background: #333;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+main h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+main p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+}
+
+.highlight {
+  color: black;
+}
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mine-project {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+} */
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mine-project span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.mine-project span:nth-child(n) {
+  animation-delay: calc(0.1s * (n - 1));
+} */
+
+/* General form styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Full viewport height and centering */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: #f0f0f0; /* Optional background color for the whole page */
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Full viewport height and centering */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: #f0f0f0; /* Optional background color for the whole page */
+}
+
+.contact-form-wrapper {
+  text-align: center; /* Center the heading and form */
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  color: #000; /* Black color for the heading */
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form within its wrapper */
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}

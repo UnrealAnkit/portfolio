@@ -61,7 +61,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Development</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Passionate frontend developer specializing in creating modern web applications with React and TypeScript.
+                    Passionate web developer specializing in creating modern web applications with React and TypeScript.
                   </p>
                 </div>
               </div>

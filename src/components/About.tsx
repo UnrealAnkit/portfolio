@@ -5,8 +5,8 @@ export default function About() {
   const skills = [
     { name: 'React', level: 90 },
     { name: 'TypeScript', level: 85 },
-    { name: 'Tailwind CSS', level: 95 },
-    { name: 'UI/UX Design', level: 80 },
+    { name: 'Javascript', level: 95 },
+    { name: 'Nextjs', level: 80 },
   ];
 
   return (

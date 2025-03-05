@@ -189,7 +189,7 @@ export default function Hero() {
               ease: "linear"
             }}
           >
-            Frontend Developer
+           Web Developer
           </motion.span>
         </motion.h1>
 

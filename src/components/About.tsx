@@ -3,10 +3,26 @@ import { GraduationCap, Code, Laptop, Brain } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    { name: 'React', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Tailwind CSS', level: 95 },
-    { name: 'UI/UX Design', level: 80 },
+    { 
+      name: 'React', 
+      level: 90, 
+      icon: <Code className="w-5 h-5 text-blue-500" /> 
+    },
+    { 
+      name: 'TypeScript', 
+      level: 85, 
+      icon: <Code className="w-5 h-5 text-blue-500" /> 
+    },
+    { 
+      name: 'Tailwind CSS', 
+      level: 95, 
+      icon: <Laptop className="w-5 h-5 text-purple-500" /> 
+    },
+    { 
+      name: 'UI/UX Design', 
+      level: 80, 
+      icon: <Brain className="w-5 h-5 text-indigo-500" /> 
+    },
   ];
 
   return (
@@ -79,9 +95,19 @@ export default function About() {
             </h3>
             <div className="space-y-6">
               {skills.map((skill, index) => (
-                <div key={skill.name} className="space-y-2">
+                <motion.div 
+                  key={skill.name} 
+                  className="space-y-2"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ scale: 1.02 }}
+                >
                   <div className="flex justify-between items-center">
-                    <span className="font-medium">{skill.name}</span>
+                    <div className="flex items-center gap-2">
+                      {skill.icon}
+                      <span className="font-medium">{skill.name}</span>
+                    </div>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">
                       {skill.level}%
                     </span>
@@ -97,12 +123,16 @@ export default function About() {
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
+                      transition={{ 
+                        delay: index * 0.1,
+                        duration: 0.8,
+                        ease: "easeOut"
+                      }}
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"></div>
                     </motion.div>
                   </motion.div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>

@@ -72,12 +72,10 @@ export default function Hero() {
             href="#contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group px-8 py-3 rounded-lg font-medium border-2 border-transparent bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 relative"
+            className="group relative px-8 py-3 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 text-white rounded-lg font-medium overflow-hidden shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:shadow-[0_0_30px_rgba(59,130,246,0.7)] transition-shadow duration-300"
           >
-            <span className="bg-white dark:bg-gray-900 text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500">
-              Contact Me
-            </span>
-            <div className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 opacity-50 group-hover:opacity-100 transition-opacity duration-300" style={{ margin: '-2px' }}></div>
+            <span className="relative z-10">Contact Me</span>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </motion.a>
         </motion.div>
       </div>

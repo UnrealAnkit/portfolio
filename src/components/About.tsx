@@ -3,26 +3,10 @@ import { GraduationCap, Code, Laptop, Brain } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    { 
-      name: 'React', 
-      level: 90, 
-      icon: <Code className="w-5 h-5 text-blue-500" /> 
-    },
-    { 
-      name: 'TypeScript', 
-      level: 85, 
-      icon: <Code className="w-5 h-5 text-blue-500" /> 
-    },
-    { 
-      name: 'Tailwind CSS', 
-      level: 95, 
-      icon: <Laptop className="w-5 h-5 text-purple-500" /> 
-    },
-    { 
-      name: 'UI/UX Design', 
-      level: 80, 
-      icon: <Brain className="w-5 h-5 text-indigo-500" /> 
-    },
+    { name: 'React', level: 90 },
+    { name: 'TypeScript', level: 85 },
+    { name: 'Javascript', level: 95 },
+    { name: 'Nextjs', level: 80 },
   ];
 
   return (
@@ -77,7 +61,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Development</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Passionate frontend developer specializing in creating modern web applications with React and TypeScript.
+                    Passionate web developer specializing in creating modern web applications with React and TypeScript.
                   </p>
                 </div>
               </div>

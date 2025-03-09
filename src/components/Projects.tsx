@@ -8,7 +8,7 @@ const projects = [
     thumbnail: 'https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?auto=format&fit=crop&q=80&w=800',
     techStack: ['React', 'TypeScript', 'Tailwind CSS'],
     demoUrl: 'https://asliastro.netlify.app',
-    githubUrl: 'https://github.com/unrealankit/asliastro'
+    githubUrl: 'https://github.com/unrealankit/asli-astro'
   },
   {
     title: 'FakeStake',

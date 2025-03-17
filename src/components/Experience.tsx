@@ -22,7 +22,7 @@ export default function Experience() {
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
-              <h3 className="text-xl font-semibold">Frontend Developer Intern</h3>
+              <h3 className="text-xl font-semibold">Full Stack Developer Intern</h3>
               <p className="text-blue-600 dark:text-blue-400 font-medium">AIPivot.io</p>
             </div>
             <div className="flex flex-col items-start md:items-end mt-2 md:mt-0">
@@ -42,26 +42,26 @@ export default function Experience() {
             <ul className="space-y-2 text-gray-600 dark:text-gray-400">
               <li className="flex items-start">
                 <span className="mr-2">•</span>
-                <span>Developed and maintained responsive web applications using React and TypeScript</span>
+                <span>Developed and maintained full stack web applications using React, Node.js, and TypeScript</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
-                <span>Implemented modern UI components with Tailwind CSS and Framer Motion</span>
+                <span>Built RESTful APIs and integrated database solutions using MongoDB</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
-                <span>Collaborated with the design team to create intuitive user interfaces</span>
+                <span>Implemented modern UI components with Tailwind CSS and handled state management with Redux</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
-                <span>Optimized application performance and improved load times</span>
+                <span>Collaborated with cross-functional teams to deliver end-to-end solutions</span>
               </li>
             </ul>
 
             <div className="mt-6">
               <h4 className="font-medium mb-2">Technologies Used:</h4>
               <div className="flex flex-wrap gap-2">
-                {['React', 'TypeScript', 'Tailwind CSS', 'Git', 'Figma', 'REST APIs'].map(tech => (
+                {['React', 'Node.js', 'TypeScript', 'MongoDB', 'Redux', 'Tailwind CSS', 'Git', 'REST APIs'].map(tech => (
                   <span
                     key={tech}
                     className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"

@@ -17,7 +17,7 @@ export default function Hero() {
         >
           <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
             <img 
-              src="src\images\logo.jpg" // Replace with your image path
+              src="src/images/logo.jpg" 
               alt="Profile Picture"
               className="w-full h-full object-cover rounded-full"
             />

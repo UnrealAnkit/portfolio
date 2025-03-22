@@ -15,10 +15,12 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 p-1 shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.7)] transition-shadow duration-300"
         >
-          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center text-3xl font-bold">
-            <span className="bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 bg-clip-text text-transparent animate-gradient">
-              AK
-            </span>
+          <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
+            <img 
+              src="src\images\logo.jpg" // Replace with your image path
+              alt="Profile Picture"
+              className="w-full h-full object-cover rounded-full"
+            />
           </div>
         </motion.div>
 

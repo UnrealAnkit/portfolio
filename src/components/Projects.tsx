@@ -4,7 +4,7 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     title: 'AsliAstro',
-    description: 'A modern astrology platform providing personalized horoscope readings and astrological insights.',
+    description: 'A modern astrology platform providing the personalized horoscope readings and astrological insights.',
     thumbnail: 'https://images.unsplash.com/photo-1532968961962-8a0cb3a2d4f5?auto=format&fit=crop&q=80&w=800',
     techStack: ['React', 'TypeScript', 'Tailwind CSS'],
     demoUrl: 'https://asliastro.netlify.app',

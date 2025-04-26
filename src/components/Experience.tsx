@@ -22,10 +22,10 @@ export default function Experience() {
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
-              <h3 className="text-xl font-semibold">Full Stack Developer Intern</h3>
-              <p className="text-blue-600 dark:text-blue-400 font-medium">AIPivot.io</p>
+              <h3 className="text-xl font-semibold">Full Stack Developer</h3>
+              <p className="text-blue-600 dark:text-blue-400 font-medium">Purecha.in</p>
             </div>
-            <div className="flex flex-col items-start md:items-end mt-2 md:mt-0">
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex items-center text-gray-600 dark:text-gray-400">
                 <Calendar size={16} className="mr-2" />
                 <span>Jan 2024 - Present</span>
@@ -71,6 +71,41 @@ export default function Experience() {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+            <div>
+              <h3 className="text-xl font-semibold">Full Stack Developer Intern</h3>
+              <p className="text-blue-600 dark:text-blue-400 font-medium">AIPivot.io</p>
+            </div>
+            <div className="flex flex-col items-start md:items-end">
+              <div className="flex items-center text-gray-600 dark:text-gray-400">
+                <Calendar size={16} className="mr-2" />
+                <span>Internship Period</span>
+              </div>
+              <div className="flex items-center text-gray-600 dark:text-gray-400 mt-1">
+                <MapPin size={16} className="mr-2" />
+                <span>Location</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-medium">Key Responsibilities:</h4>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-400">
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Assisted in developing web applications using React and Node.js</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Participated in code reviews and team meetings</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Contributed to the design and implementation of new features</span>
+              </li>
+            </ul>
           </div>
         </motion.div>
       </div>

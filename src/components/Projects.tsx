@@ -11,12 +11,12 @@ const projects = [
     githubUrl: 'https://github.com/unrealankit/asli-astro'
   },
   {
-    title: 'FakeStake',
-    description: 'Cryptocurrency staking simulation platform for educational purposes.',
-    thumbnail: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&q=80&w=800',
-    techStack: ['React', 'TypeScript', 'Web3.js'],
-    demoUrl: 'https://fakestake-flame.vercel.app',
-    githubUrl: 'https://github.com/unrealankit/fakestake'
+    title: 'HackSaathii',
+    description: 'A platform connecting developers for hackathons, helping them find team members with complementary skills.',
+    thumbnail: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
+    techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
+    demoUrl: 'https://hacksaathii.netlify.app',
+    githubUrl: 'https://github.com/UnrealAnkit/saathi'
   },
   {
     title: 'Typing Master',

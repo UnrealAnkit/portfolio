@@ -11,12 +11,12 @@ const projects = [
     githubUrl: 'https://github.com/unrealankit/asli-astro'
   },
   {
-    title: 'HackSaathii',
-    description: 'A platform connecting developers for hackathons, helping them find team members with complementary skills.',
-    thumbnail: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
+    title: 'EventsHubb',
+    description: 'An event finder platform that helps users discover and attend local events, conferences, and meetups.',
+    thumbnail: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800',
     techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
-    demoUrl: 'https://hacksaathii.netlify.app',
-    githubUrl: 'https://github.com/UnrealAnkit/saathi'
+    demoUrl: 'https://eventshubb.netlify.app',
+    githubUrl: 'https://github.com/UnrealAnkit/eventhub'
   },
   {
     title: 'Typing Master',

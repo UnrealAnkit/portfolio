@@ -18,7 +18,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg"
+          className="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg mb-8"
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
@@ -28,7 +28,7 @@ export default function Experience() {
             <div className="flex flex-col items-start md:items-end">
               <div className="flex items-center text-gray-600 dark:text-gray-400">
                 <Calendar size={16} className="mr-2" />
-                <span>Jan 2024 - Present</span>
+                <span>April 2024 - Present</span>
               </div>
               <div className="flex items-center text-gray-600 dark:text-gray-400 mt-1">
                 <MapPin size={16} className="mr-2" />
@@ -72,7 +72,14 @@ export default function Experience() {
               </div>
             </div>
           </div>
+        </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg"
+        >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
               <h3 className="text-xl font-semibold">Full Stack Developer Intern</h3>
@@ -81,11 +88,11 @@ export default function Experience() {
             <div className="flex flex-col items-start md:items-end">
               <div className="flex items-center text-gray-600 dark:text-gray-400">
                 <Calendar size={16} className="mr-2" />
-                <span>Internship Period</span>
+                <span>December 2024 - March 2025</span>
               </div>
               <div className="flex items-center text-gray-600 dark:text-gray-400 mt-1">
                 <MapPin size={16} className="mr-2" />
-                <span>Location</span>
+                <span>Remote</span>
               </div>
             </div>
           </div>

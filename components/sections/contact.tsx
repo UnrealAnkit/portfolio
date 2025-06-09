@@ -106,7 +106,7 @@ export function Contact() {
                 </a>
               </Button>
               <Button variant="outline" asChild className="group">
-                <a href="https://twitter.com/ankitkumar" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/UnrealAnkit" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
                   DM on Twitter
                 </a>

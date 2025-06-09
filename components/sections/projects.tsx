@@ -19,7 +19,7 @@ const projects = [
     title: 'AsliAstro',
     description: 'Astrology platform for personalized horoscopes with AI-powered predictions.',
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'APIs'],
-    liveUrl: 'https://github.com/UnrealAnkit/asli-astro',
+    liveUrl: 'https://asliastro.netlify.app/',
     githubUrl: 'https://github.com/UnrealAnkit/asli-astro',
     image: 'https://images.pexels.com/photos/6044198/pexels-photo-6044198.jpeg?auto=compress&cs=tinysrgb&w=800',
   },

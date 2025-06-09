@@ -10,9 +10,9 @@ const taglines = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/ankitkumar', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/ankitkumar', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com/ankitkumar', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/UnrealAnkit', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/unrealankit', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://twitter.com/unrealankit', label: 'Twitter' },
 ];
 
 export function Hero() {

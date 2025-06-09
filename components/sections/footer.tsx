@@ -18,7 +18,7 @@ export function Footer() {
           {/* Social Links */}
           <div className="flex justify-center gap-4">
             <motion.a
-              href="https://github.com/ankitkumar"
+              href="https://github.com/unrealankit"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -27,7 +27,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/ankitkumar"
+              href="https://linkedin.com/in/unrelankit"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -36,7 +36,7 @@ export function Footer() {
               <Linkedin className="h-5 w-5" />
             </motion.a>
             <motion.a
-              href="https://twitter.com/ankitkumar"
+              href="https://twitter.com/unrealankit"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}

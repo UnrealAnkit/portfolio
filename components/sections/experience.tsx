@@ -17,11 +17,11 @@ const experiences = [
   },
    {
     title: 'RK Visa Solutions',
+    type: 'Full Stack Developer',
+    period: 'Jan 2024 - Present',
     description: 'Your trusted partner for immigration and education services. We help students and professionals achieve their global aspirations.',
-    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-    liveUrl: 'https://rkvisasolutions.netlify.app/',
-    githubUrl: 'https://github.com/UnrealAnkit/rkruss',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://rkvisasolutions.netlify.app/',
   },
   {
     title: 'AIPivot',

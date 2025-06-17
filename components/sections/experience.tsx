@@ -15,6 +15,14 @@ const experiences = [
     skills: ['React', 'Next.js', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS'],
     link: '#',
   },
+   {
+    title: 'RK Visa Solutions',
+    description: 'Your trusted partner for immigration and education services. We help students and professionals achieve their global aspirations.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://rkvisasolutions.netlify.app/',
+    githubUrl: 'https://github.com/UnrealAnkit/rkruss',
+    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
   {
     title: 'AIPivot',
     type: 'Software Developer Intern',

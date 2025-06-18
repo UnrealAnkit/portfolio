@@ -16,6 +16,14 @@ const projects = [
     image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
+    title: 'RK Visa Solutions',
+    description: 'Your trusted partner for immigration and education services. We help students and professionals achieve their global aspirations.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://rkvisasolutions.netlify.app/',
+    githubUrl: 'https://github.com/UnrealAnkit/rkruss',
+    image: 'https://images.pexels.com/photos/1464143/pexels-photo-1464143.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
     title: 'AsliAstro',
     description: 'Astrology platform for personalized horoscopes with AI-powered predictions.',
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'APIs'],

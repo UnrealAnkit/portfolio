@@ -40,7 +40,7 @@ export function About() {
               </p>
               
               <p className="text-lg text-muted-foreground">
-                I'm pursuing B.Tech in CS at <span className="text-primary font-semibold">IILM University, Greater Noida</span> (Graduating: Dec 2028).
+                I'm pursuing B.Tech in CS currently In 1st Year at <span className="text-primary font-semibold">IILM University, Greater Noida</span> (Graduating: Dec 2028).
               </p>
               
               <p className="text-lg text-muted-foreground">

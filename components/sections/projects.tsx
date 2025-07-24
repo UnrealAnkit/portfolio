@@ -8,12 +8,12 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
-    title: 'PotBazar.com',
-    description: 'Live multi-vendor platform for local market products with real-time inventory management.',
-    tech: ['React', 'Next.js', 'MongoDB', 'Tailwind CSS', 'Node.js'],
-    liveUrl: 'https://www.potbazar.com/',
-    githubUrl: 'https://github.com/shankarmishra/potbazarrrrrrrrrrr',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'SHELeads',
+    description: 'SHELeads is dedicated to empowering women entrepreneurs and professionals by providing a tailored business solution for establishing and growing their businesses in the digital world.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://sheleadsindia.in/',
+    githubUrl: '#',
+    image: '/she-leads-logo.png',
   },
   {
     title: 'RK Visa Solutions',
@@ -30,14 +30,6 @@ const projects = [
     liveUrl: 'https://asliastro.netlify.app/',
     githubUrl: 'https://github.com/UnrealAnkit/asli-astro',
     image: 'https://images.pexels.com/photos/6044198/pexels-photo-6044198.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    title: 'Typing Master',
-    description: 'Typing speed tester with real-time tracking and performance analytics.',
-    tech: ['React', 'JavaScript', 'CSS', 'Local Storage'],
-    liveUrl: 'https://typingmaster-xi.vercel.app/',
-    githubUrl: 'https://github.com/UnrealAnkit/typingmaster',
-    image: 'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
 ];
 

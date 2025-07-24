@@ -15,14 +15,6 @@ const experiences = [
     skills: ['React', 'Next.js', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS'],
     link: '#',
   },
-   {
-    title: 'RK Visa Solutions',
-    type: 'Full Stack Developer',
-    period: 'Jan 2024 - Present',
-    description: 'Your trusted partner for immigration and education services. We help students and professionals achieve their global aspirations.',
-    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-    link: 'https://rkvisasolutions.netlify.app/',
-  },
   {
     title: 'AIPivot',
     type: 'Software Developer Intern',

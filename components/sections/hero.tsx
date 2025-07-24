@@ -91,7 +91,7 @@ export function Hero() {
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               Hey, I'm Ankit a passionate full-stack developer who thrives on
               building meaningful & useful web apps. I love turning bold ideas into
-              real-world solutions currently building SaaS platforms.
+              real-world solutions currently building SaaS platforms. I am studying at IILM 2nd year.
             </p>
             <p className="text-base sm:text-lg text-muted-foreground px-4">
               Have an idea or want to build something ? DMs are always open!

@@ -8,10 +8,10 @@ import { Button } from '@/components/ui/button';
 
 const experiences = [
   {
-    title: 'Pure Cha',
+    title: 'Sanity Gaming',
     type: 'Full Stack Developer',
-    period: 'April 2024 – Present',
-    description: 'Building scalable web applications and enhancing user experience for a tea marketplace platform with modern React architecture.',
+    period: '20 June 2025 – 20 September 2025',
+    description: 'Building scalable web applications and enhancing user experience for a gaming platform with modern React architecture.',
     skills: ['React', 'Next.js', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS'],
     link: '#',
   },

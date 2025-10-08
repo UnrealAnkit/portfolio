@@ -8,6 +8,14 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
+    title: 'CH2 World',
+    description: 'A healing ecosystem that brings together science, soul, and community for true healing. Founded by Priyanka from her lived experience with chronic conditions, inaugurated by the Minister of AYUSH.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://ch2.world/',
+    githubUrl: '#',
+    image: '/ch2-image-logo.png',
+  },
+  {
     title: 'SHELeads',
     description: 'SHELeads is dedicated to empowering women entrepreneurs and professionals by providing a tailored business solution for establishing and growing their businesses in the digital world.',
     tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -51,7 +59,7 @@ export function Projects() {
           <div className="space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold">Featured Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A collection of projects that showcase my skills and passion for building great user experiences.
+              A collection of projects that showcase my skills and passion for building great user experiences my clients like.
             </p>
           </div>
           

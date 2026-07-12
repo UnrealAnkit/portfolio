@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -57,9 +57,11 @@ export function Navbar() {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500`}
     >
-      <div className={`mx-auto transition-all duration-500 bg-gradient-to-r from-primary/10 via-background to-primary/10 backdrop-blur-md rounded-full ${
+      <div className={`mx-auto transition-all duration-500 bg-gradient-to-r from-primary/10 via-background to-primary/10 backdrop-blur-md border border-border/30 shadow-sm ${
+        isMobileMenuOpen ? 'rounded-[2rem]' : 'rounded-full'
+      } ${
         isScrolled 
-          ? 'px-4 sm:px-6 lg:px-8 max-w-5xl border-x border-border/50 shadow-sm my-2'
+          ? 'px-4 sm:px-6 lg:px-8 max-w-5xl my-2'
           : 'px-6 sm:px-8 lg:px-12 max-w-7xl my-3'
       }`}>
         <div className={`flex items-center justify-between transition-all duration-500 ${
@@ -71,13 +73,6 @@ export function Navbar() {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection('#home')}
           >
-            <div className={`bg-gradient-to-r from-primary to-primary/80 rounded-full flex items-center justify-center transition-all duration-500 ${
-              isScrolled ? 'w-7 h-7' : 'w-9 h-9'
-            }`}>
-              <span className={`text-background font-bold transition-all duration-500 ${
-                isScrolled ? 'text-xs' : 'text-sm'
-              }`}>AK</span>
-            </div>
             <span className={`font-semibold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent transition-all duration-500 ${
               isScrolled ? 'text-base' : 'text-lg'
             }`}>ANKIT</span>
@@ -146,30 +141,33 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden border-t border-border/50"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <div className="px-3 py-2 text-sm">
-                <span className="text-primary/80">{currentTime}</span>
-                <span className="text-muted-foreground ml-2">IST</span>
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden border-t border-border/50 overflow-hidden"
+              transition={{ duration: 0.3 }}
+            >
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                <div className="px-3 py-2 text-sm flex items-center gap-2">
+                  <span className="text-primary/80">{currentTime}</span>
+                  <span className="text-muted-foreground font-mono">IST</span>
+                </div>
+                {navItems.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.href)}
+                    className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors w-full text-left"
+                  >
+                    {item.name}
+                  </button>
+                ))}
               </div>
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary transition-colors w-full text-left"
-                >
-                  {item.name}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.nav>
   );

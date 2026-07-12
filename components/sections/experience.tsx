@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Calendar, ExternalLink, Briefcase } from 'lucide-react';
+import { Calendar, ExternalLink, Briefcase, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const experiences = [
@@ -100,11 +100,10 @@ export function Experience() {
                     {exp.description}
                   </p>
                   
-                  {/* Technologies & Skills */}
                   <div className="space-y-3 mb-6">
-                    <p className="text-sm font-medium flex items-center gap-2">
-                      <span>🔧</span>
-                      Technologies & Skills
+                    <p className="text-sm font-medium flex items-center gap-2 text-primary">
+                      <Wrench className="h-4 w-4" />
+                      <span>Technologies & Skills</span>
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {exp.skills.map((skill) => (

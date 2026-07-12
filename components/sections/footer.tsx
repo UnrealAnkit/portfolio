@@ -42,7 +42,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/unrelankit"
+              href="https://linkedin.com/in/unrealankit"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}

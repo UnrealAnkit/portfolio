@@ -8,14 +8,6 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
-    title: 'HoldXPay',
-    description: 'A secure freelance escrow and payment milestone platform helping businesses and freelancers seamlessly manage contracts, tasks, and payments.',
-    tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    liveUrl: 'https://holdxpay.com',
-    githubUrl: '#',
-    image: 'https://images.pexels.com/photos/6261785/pexels-photo-6261785.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
     title: 'Fragment Studios',
     description: 'A creative agency experience specializing in building highly interactive Discord communities, digital storytelling, and brand engagement.',
     tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript'],

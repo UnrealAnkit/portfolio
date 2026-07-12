@@ -28,6 +28,7 @@ export function Contact() {
     email: '',
     message: '',
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,14 +91,14 @@ export function Contact() {
             </p>
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Form Container */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            {/* Quick Contact */}
+            {/* Quick Contact Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="outline" asChild className="group">
                 <a href="mailto:work.ankit2@gmail.com">
@@ -148,9 +149,10 @@ export function Contact() {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="resize-none bg-background"
+                    className="resize-none bg-background text-left"
                   />
                 </div>
+
                 <Button
                   type="submit"
                   disabled={isSubmitting}

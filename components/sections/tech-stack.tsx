@@ -3,20 +3,34 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { 
+  SiJavascript, 
+  SiTailwindcss, 
+  SiReact, 
+  SiNodedotjs, 
+  SiExpress, 
+  SiTypescript, 
+  SiMongodb, 
+  SiNextdotjs, 
+  SiPostgresql, 
+  SiFirebase, 
+  SiGit 
+} from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 const techStack = [
-  { name: 'JavaScript', icon: '🟨' },
-  { name: 'Tailwind', icon: '🎨' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'Express.js', icon: '🚀' },
-  { name: 'TypeScript', icon: '🔷' },
-  { name: 'MongoDB', icon: '🍃' },
-  { name: 'Next.js', icon: '▲' },
-  { name: 'PostgreSQL', icon: '🐘' },
-  { name: 'Firebase', icon: '🔥' },
-  { name: 'React Native', icon: '📱' },
-  { name: 'Git', icon: '🔧' },
+  { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-500 dark:text-yellow-400' },
+  { name: 'Tailwind', icon: SiTailwindcss, color: 'text-cyan-500 dark:text-cyan-400' },
+  { name: 'React', icon: SiReact, color: 'text-sky-500 dark:text-sky-400' },
+  { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-600 dark:text-green-500' },
+  { name: 'Express.js', icon: SiExpress, color: 'text-neutral-600 dark:text-neutral-400' },
+  { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-600 dark:text-blue-500' },
+  { name: 'MongoDB', icon: SiMongodb, color: 'text-emerald-600 dark:text-emerald-500' },
+  { name: 'Next.js', icon: SiNextdotjs, color: 'text-foreground' },
+  { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-500 dark:text-blue-400' },
+  { name: 'Firebase', icon: SiFirebase, color: 'text-orange-500 dark:text-orange-400' },
+  { name: 'React Native', icon: TbBrandReactNative, color: 'text-sky-600 dark:text-sky-500' },
+  { name: 'Git', icon: SiGit, color: 'text-orange-600 dark:text-orange-500' },
 ];
 
 export function TechStack() {
@@ -64,9 +78,9 @@ export function TechStack() {
                     animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.5, delay: index * 0.05 }}
                     whileHover={{ scale: 1.05, y: -2 }}
-                    className="tech-badge flex-col gap-2 aspect-square justify-center text-center p-2 sm:p-3"
+                    className="tech-badge flex flex-col gap-3 aspect-square justify-center items-center text-center p-2 sm:p-3"
                   >
-                    <span className="text-xl sm:text-2xl">{tech.icon}</span>
+                    <tech.icon className={`h-8 w-8 sm:h-10 sm:w-10 transition-colors duration-300 ${tech.color}`} />
                     <span className="text-xs font-medium leading-tight">{tech.name}</span>
                   </motion.div>
                 ))}

@@ -57,8 +57,12 @@ export function About() {
               <div className="bg-gradient-to-br from-primary/20 to-purple-500/20 rounded-2xl p-8 backdrop-blur-sm border border-primary/10">
                 <div className="space-y-4">
                   <div className="text-center">
-                    <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-purple-500 rounded-full flex items-center justify-center text-4xl font-bold text-white">
-                      AK
+                    <div className="w-32 h-32 mx-auto relative group overflow-hidden rounded-full border-2 border-primary/30 shadow-md">
+                      <img
+                        src="https://github.com/UnrealAnkit.png"
+                        alt="Ankit Kumar"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
                     </div>
                   </div>
                   <div className="text-center space-y-2">

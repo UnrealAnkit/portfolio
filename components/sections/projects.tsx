@@ -8,14 +8,6 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
-    title: 'Ambar',
-    description: 'A competitive gaming platform where players participate in challenges for popular titles like League of Legends, Valorant, and CS:GO to earn rewards and gift cards.',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    liveUrl: 'https://ambar.gg',
-    githubUrl: '#',
-    image: 'https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
     title: 'HoldXPay',
     description: 'A secure freelance escrow and payment milestone platform helping businesses and freelancers seamlessly manage contracts, tasks, and payments.',
     tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],

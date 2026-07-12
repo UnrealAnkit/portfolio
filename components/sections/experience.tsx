@@ -26,7 +26,7 @@ const experiences = [
   {
     title: 'Devdock',
     type: 'Campus Ambassador',
-    period: 'Ongoing',
+    period: 'March 2025 – Dec 2025',
     description: 'Building Web3 community and organizing tech events to promote blockchain adoption among students.',
     skills: ['Web3', 'Community Building', 'Event Management', 'Blockchain'],
     link: '#',

@@ -8,6 +8,46 @@ import { Button } from '@/components/ui/button';
 
 const projects = [
   {
+    title: 'Ambar',
+    description: 'A competitive gaming platform where players participate in challenges for popular titles like League of Legends, Valorant, and CS:GO to earn rewards and gift cards.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    liveUrl: 'https://ambar.gg',
+    githubUrl: '#',
+    image: 'https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    title: 'HoldXPay',
+    description: 'A secure freelance escrow and payment milestone platform helping businesses and freelancers seamlessly manage contracts, tasks, and payments.',
+    tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    liveUrl: 'https://holdxpay.com',
+    githubUrl: '#',
+    image: 'https://images.pexels.com/photos/6261785/pexels-photo-6261785.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    title: 'Fragment Studios',
+    description: 'A creative agency experience specializing in building highly interactive Discord communities, digital storytelling, and brand engagement.',
+    tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript'],
+    liveUrl: 'https://fragmentstudios.xyz',
+    githubUrl: '#',
+    image: 'https://images.pexels.com/photos/7681092/pexels-photo-7681092.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    title: 'JoyLink',
+    description: 'An AI-powered link-in-bio platform for Amazon associates and creators, offering deep-linking and commission-optimizing automation tools.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'APIs'],
+    liveUrl: 'https://joylink.io',
+    githubUrl: '#',
+    image: 'https://images.pexels.com/photos/5076596/pexels-photo-5076596.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    title: 'CodVertex Fitness',
+    description: 'A digital fitness platform providing AI-powered personalized workout and meal planning alongside community-based health challenges.',
+    tech: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+    liveUrl: 'https://fitness.codvertex.in',
+    githubUrl: '#',
+    image: 'https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
     title: 'CH2 World',
     description: 'A healing ecosystem that brings together science, soul, and community for true healing. Founded by Priyanka from her lived experience with chronic conditions, inaugurated by the Minister of AYUSH.',
     tech: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -57,14 +97,14 @@ export function Projects() {
         >
           {/* Header */}
           <div className="space-y-4">
-            <h2 className="text-4xl sm:text-5xl font-bold">Featured Projects</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold">Freelance Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A collection of projects that showcase my skills and passion for building great user experiences my clients like.
             </p>
           </div>
           
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -74,7 +114,7 @@ export function Projects() {
                 whileHover={{ y: -8 }}
                 className="group"
               >
-                <div className="bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 hover:border-foreground/20 hover:shadow-lg h-full">
+                <div className="bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 hover:border-foreground/20 hover:shadow-lg h-full flex flex-col">
                   {/* Project Image */}
                   <div className="relative overflow-hidden aspect-video">
                     <img
@@ -86,7 +126,7 @@ export function Projects() {
                   </div>
                   
                   {/* Project Content */}
-                  <div className="p-6 space-y-4 flex flex-col h-[calc(100%-56.25%)]">
+                  <div className="p-6 space-y-4 flex flex-col flex-grow">
                     <div className="space-y-2 flex-grow">
                       <h3 className="text-xl font-bold">{project.title}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
@@ -95,7 +135,7 @@ export function Projects() {
                     </div>
                     
                     {/* Tech Stack */}
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 pt-2">
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
@@ -107,7 +147,7 @@ export function Projects() {
                     </div>
                     
                     {/* Action Buttons */}
-                    <div className="flex gap-3 pt-2">
+                    <div className="flex gap-3 pt-4">
                       {project.liveUrl !== '#' && (
                         <Button size="sm" variant="outline" asChild className="flex-1">
                           <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">

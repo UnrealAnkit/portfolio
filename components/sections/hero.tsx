@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter, MapPin, Clock } from 'lucide-react';
 
 const taglines = [
-  "100xLearner",
   "I Break & build things...",
 ];
 
@@ -17,13 +16,32 @@ const socialLinks = [
 
 export function Hero() {
   const [currentTagline, setCurrentTagline] = useState(0);
+  const [currentTime, setCurrentTime] = useState('');
 
   useEffect(() => {
+    if (taglines.length <= 1) return;
     const taglineInterval = setInterval(() => {
       setCurrentTagline((prev) => (prev + 1) % taglines.length);
     }, 3000);
 
     return () => clearInterval(taglineInterval);
+  }, []);
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const istTime = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Kolkata',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+      }).format(now);
+      setCurrentTime(istTime);
+    };
+
+    updateTime();
+    const timeInterval = setInterval(updateTime, 1000);
+    return () => clearInterval(timeInterval);
   }, []);
 
   return (
@@ -89,12 +107,13 @@ export function Hero() {
             className="space-y-4 sm:space-y-6"
           >
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-              Hey, I'm Ankit a passionate full-stack developer who thrives on
-              building meaningful & useful web apps. I love turning bold ideas into
-              real-world solutions currently building SaaS platforms. I am studying at IILM 2nd year.
+              Hey, I'm Ankit, a passionate full-stack developer who thrives on
+              building meaningful & useful web apps. I actively host hackathons and
+              love turning bold ideas into real-world solutions. Currently building
+              SaaS platforms and studying at IILM (2nd year).
             </p>
             <p className="text-base sm:text-lg text-muted-foreground px-4">
-              Have an idea or want to build something ? DMs are always open!
+              Have an idea or want to build something? DMs are always open!
             </p>
           </motion.div>
 
@@ -135,7 +154,6 @@ export function Hero() {
             ))}
           </motion.div>
 
-          {}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -144,7 +162,7 @@ export function Hero() {
           >
             <div className="flex items-center gap-2">
               <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
-              <span id="current-time"></span>
+              <span id="current-time">{currentTime}</span>
               <span>IST</span>
             </div>
             <div className="flex items-center gap-2">
